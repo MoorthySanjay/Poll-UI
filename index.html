@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Poll UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .poll {
+            height: 500px;
+            width: auto;
+            background-color: #7d30f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            width: 280px;
+        }
+
+        .container h1 {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .html,
+        .java,
+        .jQuery {
+            border: 2px solid #80808065;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .python {
+            border: 2px solid #7d30f0;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .html_1 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .html_bar {
+            height: 5px;
+            width: auto;
+            background-color: #1c1c1c1c;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .html_bar_1 {
+            height: 5px;
+            width: 30%;
+            background-color: #1c1c1c3b;
+        }
+
+        .cnt,
+        p {
+            font-weight: 700;
+        }
+
+        .java_bar_1 {
+            height: 5px;
+            width: 20%;
+            background-color: #1c1c1c3b;
+        }
+
+        .python_bar_1 {
+            height: 5px;
+            width: 40%;
+            background-color: #7d30f0;
+        }
+
+        .jQuery_bar_1 {
+            height: 5px;
+            width: 10%;
+            background-color: #1c1c1c3b;
+        }
+
+        .python_1 cnt input[type=radio] {
+            background-color: #7d30f0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="poll">
+        <div class="container">
+            <h1>Poll UI Design</h1>
+            <div class="html">
+                <div class="html_1">
+                    <div class="cnt">
+                        <input type="radio" id="html">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="prtg">
+                        <p>30%</p>
+                    </div>
+                </div>
+                <div class="html_bar">
+                    <div class="html_bar_1"></div>
+                </div>
+            </div>
+            <div class="java">
+                <div class="html_1">
+                    <div class="cnt">
+                        <input type="radio" id="html">
+                        <label for="html">Java</label>
+                    </div>
+                    <div class="prtg">
+                        <p>20%</p>
+                    </div>
+                </div>
+                <div class="html_bar">
+                    <div class="java_bar_1"></div>
+                </div>
+            </div>
+            <div class="python">
+                <div class="html_1 python_1">
+                    <div class="cnt">
+                        <input type="radio" id="html">
+                        <label for="html">Python</label>
+                    </div>
+                    <div class="prtg">
+                        <p>40%</p>
+                    </div>
+                </div>
+                <div class="html_bar">
+                    <div class="python_bar_1"></div>
+                </div>
+            </div>
+            <div class="jQuery">
+                <div class="html_1">
+                    <div class="cnt">
+                        <input type="radio" id="html">
+                        <label for="html">jQuery</label>
+                    </div>
+                    <div class="prtg">
+                        <p>10%</p>
+                    </div>
+                </div>
+                <div class="html_bar">
+                    <div class="jQuery_bar_1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
